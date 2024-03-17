@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__tel {
+    @include link-prevent-default;
+    font-size: 24px;
+    font-family: $heading-font;
+    transition: $link-transition;
+
+    &:hover {
+      color: $accent-bg-color;
+      transition: $link-transition;
+    }
+  }
+
+  &__email {
+    @include link-prevent-default;
+    margin-bottom: 12px;
+    font-size: 16px;
+    transition: $link-transition;
+
+    &:hover {
+      color: $accent-bg-color;
+      transition: $link-transition;
+    }
+  }
+}

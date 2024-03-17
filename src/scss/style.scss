@@ -1,17 +1,71 @@
-$bgColor: #24292e;
-$text: #fff;
-
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
 
-body {
-  padding: 1rem;
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TT Lakes Light';
+  src: url('../fonts/TTLakes-Light.woff') format('woff'),
+    url('../fonts/TTLakes-Light.ttf') format('truetype');
+}
+
+@import '../scss/variables.scss', '../scss/mixins.scss';
+
+// blocks
+@import '../blocks/header/header.scss',
+  '../blocks/account-link/account-link.scss',
+  '../blocks/additional-links/additional-links.scss',
+  '../blocks/aside-header/aside-header.scss',
+  '../blocks/aside-link-list/aside-link-list.scss',
+  '../blocks/brands-carousel/brands-carousel.scss',
+  '../blocks/btn-read-next/btn-read-next.scss',
+  '../blocks/burger-menu/burger-menu.scss', '../blocks/call-link/call-link.scss',
+  '../blocks/chat-link/chat-link.scss', '../blocks/contacts/contacts.scss',
+  '../blocks/divider/divider.scss',
+  '../blocks/language-change-form/language-change-form.scss',
+  '../blocks/link/link.scss', '../blocks/link-carousel/link-carousel.scss',
+  '../blocks/logo/logo.scss', '../blocks/main/main.scss',
+  '../blocks/main-navigation/main-navigation.scss',
+  '../blocks/mobile-menu/mobile-menu.scss',
+  '../blocks/orders-link/orders-link.scss',
+  '../blocks/request-link/request-link.scss',
+  '../blocks/search-input/search-input.scss',
+  '../blocks/section-about-us/section-about-us.scss',
+  '../blocks/section-brands/section-brands.scss', '../blocks/swiper/swiper.scss',
+  '../blocks/swiper-pagination-bullet-active/swiper-pagination-bullet-active.scss';
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  padding: 0;
+}
+body {
+  background: #f8f8f8;
+  font-family: 'TT Lakes Regular';
+  font-size: 14px;
+  max-width: 1120px;
+  min-width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  color: #1b1c21;
 }

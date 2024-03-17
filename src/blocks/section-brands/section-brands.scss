@@ -1,0 +1,28 @@
+.section-brands {
+  padding-top: 32px;
+
+  &__heading {
+    text-transform: uppercase;
+    color: $light-txt-color;
+    font-family: $light-font;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btn-read-next {
+    margin-top: 8px;
+
+    @media screen and (max-width: $screen-md) {
+      display: none;
+    }
+
+    &::before {
+      position: relative;
+      top: 5px;
+      margin-right: 8px;
+    }
+  }
+}

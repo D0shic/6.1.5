@@ -1,0 +1,21 @@
+.link {
+  @include link-prevent-default;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $accent-bg-color;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: background-color 0.3s ease-in-out 0s;
+  }
+
+  &:hover::after {
+    background-color: $light-accent-bg-color;
+    transition: background-color $link-transition;
+  }
+}

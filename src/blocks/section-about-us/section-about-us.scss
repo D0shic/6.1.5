@@ -1,0 +1,50 @@
+.section-about-us {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $screen-md) {
+    flex-direction: row;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+
+  &__img {
+    @media screen and (max-width: $screen-md) {
+      width: calc(100vw - 32px);
+      height: auto;
+      align-self: center;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      width: 360px;
+      height: auto;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      width: 561px;
+      height: auto;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: $screen-md) {
+      margin-right: 48px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      margin-right: 36px;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 16px;
+
+    &::before {
+      position: relative;
+      top: 5px;
+      margin-right: 8px;
+    }
+  }
+}

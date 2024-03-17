@@ -1,0 +1,21 @@
+.logo {
+  display: none;
+
+  &--appearance--s {
+    @media screen and (max-width: $screen-md) {
+      display: inline;
+    }
+  }
+
+  &--appearance--m {
+    @media screen and (max-width: $screen-lg) {
+      display: inline;
+    }
+  }
+
+  &--appearance--l {
+    @media screen and (min-width: $screen-lg) {
+      display: inline;
+    }
+  }
+}

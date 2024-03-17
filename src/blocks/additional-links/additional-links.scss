@@ -1,0 +1,40 @@
+.additional-links {
+  @include links-list;
+
+  &__last-link {
+    margin-right: 0;
+  }
+
+  &__link {
+    display: none;
+    font-size: 0px;
+    margin-right: 16px;
+
+    &--appearance--s {
+      @media screen and (max-width: ($screen-md - 1px)) {
+        display: block;
+      }
+    }
+
+    &--appearance--m {
+      @media screen and (max-width: ($screen-lg - 1px)) {
+        display: block;
+      }
+    }
+
+    &--appearance--l {
+      @media screen and (min-width: $screen-lg) {
+        display: block;
+        font-size: 1rem;
+      }
+
+      &::after {
+        @media screen and (min-width: $screen-lg) {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 9px;
+        }
+      }
+    }
+  }
+}

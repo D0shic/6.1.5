@@ -1,0 +1,25 @@
+.link-carousel {
+  @include links-list;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $screen-lg) {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-color: $neutral-bg-color transparent;
+    scrollbar-width: thin;
+  }
+
+  &__link {
+    @include link-prevent-default;
+    padding: 8px 9px;
+    display: block;
+    border-radius: 6px;
+    color: $light-txt-color;
+    text-wrap: nowrap;
+    font-size: $link-font-size;
+
+    &[active] {
+      border: 2px solid $light-accent-bg-color;
+    }
+  }
+}

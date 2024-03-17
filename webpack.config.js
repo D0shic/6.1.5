@@ -79,14 +79,14 @@ module.exports = {
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
       filename: 'style.css'
-    }),
+    })
 
     // Копируем картинки
-    new CopyWebpackPlugin([
-      {
-        from: './src/img',
-        to: 'img'
-      }
-    ])
+    // new CopyWebpackPlugin([
+    //   {
+    //     from: './src/img',
+    //     to: 'img'
+    //   }
+    // ])
   ]
 }

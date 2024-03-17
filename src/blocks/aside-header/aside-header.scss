@@ -1,0 +1,8 @@
+.aside-header {
+  @include flex-container-sb;
+
+  &__left-group {
+    display: flex;
+    align-items: center;
+  }
+}

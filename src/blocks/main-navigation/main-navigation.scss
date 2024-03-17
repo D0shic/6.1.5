@@ -1,0 +1,15 @@
+.main-navigation {
+  display: none;
+
+  &--appearance--s {
+    @media screen and (max-width: $screen-md) {
+      display: inline;
+    }
+  }
+
+  &--appearance--m {
+    @media screen and (max-width: $screen-lg) {
+      display: inline;
+    }
+  }
+}

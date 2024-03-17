@@ -1,0 +1,34 @@
+@mixin flex-container-sb {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin links-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+@mixin btn-prevent-default {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+}
+
+@mixin link-prevent-default {
+  text-decoration: none;
+  cursor: pointer;
+  color: $main-txt-color;
+}
+
+@mixin btn-icon {
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}

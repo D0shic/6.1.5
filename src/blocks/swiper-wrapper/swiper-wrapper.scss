@@ -1,0 +1,9 @@
+.swiper-wrapper {
+  min-height: 100px;
+  height: fit-content;
+  transition: height 0.2s linear 0s;
+
+  @media screen and (min-width: $screen-md) {
+    height: 157px;
+  }
+}

@@ -1,0 +1,34 @@
+.aside-link-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    @include link-prevent-default;
+    font-family: $accent-font;
+    position: relative;
+
+    &[active]::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 32px;
+      background-color: $light-accent-bg-color;
+      border-radius: 0 15px 15px 0;
+      position: absolute;
+      left: -23px;
+      top: -6px;
+      transition: $link-transition;
+    }
+
+    &:hover {
+      color: $light-txt-color;
+      transition: $link-transition;
+    }
+  }
+}

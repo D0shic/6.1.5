@@ -2,15 +2,291 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services & Software</title>
+    <link rel="stylesheet" href="./scss/style.scss" />
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
+    <header class="header header--hidden">
+      <div class="header__left-group">
+        <nav
+          class="link main-navigation main-navigation--appearance--s main-navigation--appearance--m burger-menu"
+        ></nav>
+        <div class="divider header__divider divider--appearance--m"></div>
+        <img
+          src="./img/Group.svg"
+          alt="Grey CPS letters logo"
+          class="logo header__logo logo--appearance--s logo--appearance--m"
+        />
+      </div>
+      <ul class="additional-links">
+        <li class="additional-links__item">
+          <a
+            href=""
+            class="link additional-links__link additional-links__link--appearance--m call-link"
+            >Позвонить</a
+          >
+        </li>
+        <li class="additional-links__item">
+          <a
+            href=""
+            class="link additional-links__link additional-links__link--appearance--m chat-link"
+            >Написать</a
+          >
+        </li>
+        <li class="additional-links__item">
+          <a
+            href=""
+            class="link additional-links__link additional-links__link--appearance--m account-link"
+            >Аккаунт</a
+          >
+        </li>
+        <div
+          class="divider header__divider divider--appearance--m divider--appearance--s"
+        ></div>
+        <li class="additional-links__item">
+          <a
+            href=""
+            class="link additional-links__link request-link additional-links__link--appearance--l additional-links__link--appearance--m additional-links__link--appearance--s"
+          >
+            Оставить заявку
+          </a>
+        </li>
+        <li class="additional-links__item">
+          <a
+            href=""
+            class="link additional-links__link orders-link additional-links__link--appearance--l additional-links__link--appearance--m additional-links__link--appearance--s"
+          >
+            Статус ремонта
+          </a>
+        </li>
+      </ul>
+    </header>
+    <aside class="mobile-menu">
+      <header class="mobile-menu__header aside-header">
+        <div class="aside-header__left-group">
+          <button class="link mobile-menu__close-btn"></button>
+          <img
+            src="./img/Group.svg"
+            alt="Grey CPS letters logo"
+            class="logo logo--appearance--s logo--appearance--m logo--appearance--l"
+          />
+        </div>
+        <div
+          type="search"
+          class="link search-input mobile-menu__search-input"
+        ></div>
+      </header>
+      <ul class="mobile-menu__link-list aside-link-list">
+        <li class="aside-link-list__item">
+          <a href="" class="aside-link-list__link" active>Ремонт техники</a>
+        </li>
+        <li class="aside-link-list__item">
+          <a href="" class="aside-link-list__link">Услуги и сервисы</a>
+        </li>
+        <li class="aside-link-list__item">
+          <a href="" class="aside-link-list__link">Корпоративным клиентам</a>
+        </li>
+        <li class="aside-link-list__item">
+          <a href="" class="aside-link-list__link">Продавцам техники</a>
+        </li>
+        <li class="aside-link-list__item">
+          <a href="" class="aside-link-list__link">Партнерам</a>
+        </li>
+        <li class="aside-link-list__item">
+          <a href="" class="aside-link-list__link">Производителям</a>
+        </li>
+        <li class="aside-link-list__item">
+          <a href="" class="aside-link-list__link">Наши сервисные центры</a>
+        </li>
+        <li class="aside-link-list__item">
+          <a href="" class="aside-link-list__link">Контакты</a>
+        </li>
+      </ul>
+      <footer class="mobile-menu__footer">
+        <ul class="additional-links mobile-menu__additional-links">
+          <li class="additional-links__item">
+            <a
+              href=""
+              class="link additional-links__link additional-links__link--appearance--m additional-links__link--appearance--s call-link"
+              >Позвонить</a
+            >
+          </li>
+          <li class="additional-links__item">
+            <a
+              href=""
+              class="link additional-links__link additional-links__link--appearance--m additional-links__link--appearance--s chat-link"
+              >Написать</a
+            >
+          </li>
+          <li class="additional-links__item">
+            <a
+              href=""
+              class="link additional-links__link additional-links__link--appearance--m additional-links__link--appearance--s account-link"
+              >Аккаунт</a
+            >
+          </li>
+        </ul>
+        <div class="contacts mobile-menu__contacts">
+          <a type="mail" href="mailto:mail@cps.com" class="contacts__email"
+            >mail@cps.com</a
+          >
+          <a type="tel" href="88008908900" class="contacts__tel"
+            >8 800 890 8900</a
+          >
+        </div>
+        <div class="language-change-form">
+          <a href="" class="language-change-form__link" active>RU</a>
+          <a href="" class="language-change-form__link">EN</a>
+          <a href="" class="language-change-form__link">CH</a>
+        </div>
+      </footer>
+    </aside>
+    <main class="main">
+      <h1 class="main__heading">Услуги и сервисы</h1>
+      <ul class="link-carousel main_link-carousel">
+        <li class="link_carousel__item">
+          <a href="" class="link-carousel__link" active>Ремонтируемые бренды</a>
+        </li>
+        <li class="link-carousel__item">
+          <a href="" class="link-carousel__link">Ремонтируемые утсройства</a>
+        </li>
+        <li class="link-carousel__item">
+          <a href="" class="link-carousel__link">Дополнительные услуги</a>
+        </li>
+        <li class="link-carousel__item">
+          <a href="" class="link-carousel__link">Цены на услуги</a>
+        </li>
+        <li class="link-carousel__item">
+          <a href="" class="link-carousel__link">Адреса сервисных центров</a>
+        </li>
+        <li class="link-carousel__item">
+          <a href="" class="link-carousel__link">Специальные цены</a>
+        </li>
+        <li class="link-carousel__item">
+          <a href="" class="link-carousel__link">Отзывы</a>
+        </li>
+      </ul>
+      <section class="section-about-us">
+        <div class="section-about-us__content">
+          <p class="section-about-us__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+            <br /><br />Мы успешно работаем с 1992 года и заслужили репутацию
+            надежного партнера, что подтверждает большое количество постоянных
+            клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и,
+            в свою очередь, советуют нас родным и близким.
+          </p>
+          <button class="section-about-us__btn btn-read-next">
+            Читать далее
+          </button>
+        </div>
+        <div class="section-about-us__img">
+          <img
+            class="section-about-us__img"
+            src="./img/image_M.jpg"
+            alt="CPS logo and sign"
+            height="auto"
+          />
+        </div>
+      </section>
+      <section class="section-brands swiper-container">
+        <h2 class="section-brands__heading">
+          Ремонт техники различных брендов
+        </h2>
+        <div class="swiper">
+          <ul class="brands-carousel swiper-wrapper">
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img
+                  src="./img/Lenovo.svg"
+                  alt="lenovo logo"
+                  class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img
+                  src="./img/samsung.png"
+                  alt=""
+                  class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img
+                  src="./img/apple.svg"
+                  alt=""
+                  class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img
+                  src="./img/viewSonic.svg"
+                  alt=""
+                  class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img
+                  src="./img/bosch.svg"
+                  alt=""
+                  class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img src="./img/hp.svg" alt="" class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img src="./img/acer.svg" alt="" class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img src="./img/sony.svg" alt="" class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img
+                  src="./img/Lenovo.svg"
+                  alt=""
+                  class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img
+                  src="./img/samsung.png"
+                  alt=""
+                  class="brands-carousel__logo"
+              /></a>
+            </li>
+            <li class="brands-carousel__item swiper-slide">
+              <a href="" class="brands-carousel__link link"
+                ><img
+                  src="./img/apple.svg"
+                  alt=""
+                  class="brands-carousel__logo"
+              /></a>
+            </li>
+          </ul>
+          <div class="swiper-pagination swiper__pagination"></div>
+        </div>
+        <button
+          type="button"
+          class="btn-read-next section-brands__btn-read-next"
+        >
+          Показать все
+        </button>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>

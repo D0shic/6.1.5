@@ -1,0 +1,19 @@
+.divider {
+  display: none;
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background-color: $light-bg-color;
+
+  &--appearance--s {
+    @media screen and (max-width: $screen-md) {
+      display: block;
+    }
+  }
+
+  &--appearance--m {
+    @media screen and (max-width: $screen-lg) {
+      display: block;
+    }
+  }
+}
