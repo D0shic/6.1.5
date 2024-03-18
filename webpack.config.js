@@ -46,12 +46,31 @@ module.exports = {
       // Подключаем шрифты из css
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
-          }
-        ]
+        loader: 'file-loader',
+        options: {
+          name: `[path][name]_[contenthash:8].[ext]`,
+          context: path.resolve(__dirname, 'src/'),
+          outputPath: 'fonts/',
+          publicPath: '../',
+          useRelativePaths: true
+          // use: [
+          //   {
+          //     loader: 'file-loader?name=./fonts/[name].[ext]'
+          //   }
+          // ]
+        }
       },
+
+      // {
+      //   test: /\.(eot|ttf|woff|woff2)$/,
+      //   type: 'asset/resource',
+      //   dependency: { not: ['url'] },
+      //   use: [
+      //     {
+      //       loader: 'assets-loader'
+      //     }
+      //   ]
+      // },
 
       // Подключаем картинки из css
       {
