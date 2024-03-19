@@ -53,24 +53,8 @@ module.exports = {
           outputPath: 'fonts/',
           publicPath: '../',
           useRelativePaths: true
-          // use: [
-          //   {
-          //     loader: 'file-loader?name=./fonts/[name].[ext]'
-          //   }
-          // ]
         }
       },
-
-      // {
-      //   test: /\.(eot|ttf|woff|woff2)$/,
-      //   type: 'asset/resource',
-      //   dependency: { not: ['url'] },
-      //   use: [
-      //     {
-      //       loader: 'assets-loader'
-      //     }
-      //   ]
-      // },
 
       // Подключаем картинки из css
       {
@@ -98,14 +82,11 @@ module.exports = {
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
       filename: 'style.css'
-    })
+    }),
 
     // Копируем картинки
-    // new CopyWebpackPlugin([
-    //   {
-    //     from: './src/img',
-    //     to: 'img'
-    //   }
-    // ])
+    new CopyWebpackPlugin({
+      patterns: [{ from: './src/img', to: 'img' }]
+    })
   ]
 }

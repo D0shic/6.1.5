@@ -141,6 +141,43 @@
         </div>
       </footer>
     </aside>
+    <aside class="feedback-modal">
+      <button class="feedback-modal__close-btn"></button>
+      <h2 class="feedback-modal__heading">Обратная связь</h2>
+      <form action="" class="feedback-form"
+        ><input type="text" class="feedback-form__input" /><input
+          type="tel"
+          class="feedback-form__input"
+        /><input type="email" class="feedback-form__input" /><input
+          type="text"
+          class="feedback-form__input"
+        />
+        <p class="warning-text">
+          Нажимая “отправить”, вы даете согласие на
+          <a href="" class="warning-text__link">
+            обработку персональных данных
+          </a>
+          и соглашаетесь с нашей
+          <a href="" class="warning-text__link">политикой конфиденциальности</a>
+        </p>
+        <button type="submit" class="feedback-form__btn btn">Отправить</button>
+      </form>
+    </aside>
+    <aside class="call-modal">
+      <h2 class="call-modal__heading"> Заказать звонок </h2>
+      <form action="" class="call-form"
+        ><input type="tel" class="call-form__input" />
+      </form>
+      <p class="warning-text">
+        Нажимая “отправить”, вы даете согласие на
+        <a href="" class="warning-text__link">
+          обработку персональных данных
+        </a>
+        и соглашаетесь с нашей
+        <a href="" class="warning-text__link">политикой конфиденциальности</a>
+      </p>
+      <button type="submit" class="call-form__btn btn">Отправить</button>
+    </aside>
     <main class="main">
       <h1 class="main__heading">Услуги и сервисы</h1>
       <ul class="link-carousel main_link-carousel">
@@ -285,6 +322,110 @@
           Показать все
         </button>
       </section>
+      <section class="section-types">
+        <h2 class="section-types__heading subtitle">
+          Ремонт различных видов техники
+        </h2>
+        <ul class="types-list">
+          <li class="types-list__item"
+            ><a href="" class="types-list__link link"
+              ><span class="types-list__title">Ремонт ноутбуков</span></a
+            ></li
+          >
+          <li class="types-list__item"
+            ><a href="" class="types-list__link link"
+              ><span class="types-list__title">Ремонт планшетов</span></a
+            ></li
+          >
+          <li class="types-list__item"
+            ><a href="" class="types-list__link link"
+              ><span class="types-list__title">Ремонт ПК</span></a
+            ></li
+          >
+          <li class="types-list__item"
+            ><a href="" class="types-list__link link"
+              ><span class="types-list__title">Ремонт мониторов</span></a
+            ></li
+          >
+        </ul>
+        <button
+          type="button"
+          class="btn-read-next section-types__btn-read-next"
+        >
+          Показать все
+        </button>
+      </section>
+      <section class="section-prices">
+        <h2 class="section-prices__heading subtitle"> Цены на услуги </h2>
+        <table class="prices-table">
+          <tr class="prices-table__row">
+            <th class="prices-table__header">Ремонтные услуги</th>
+            <th class="prices-table__header">Цена</th>
+            <th class="prices-table__header">Срок</th>
+            <th class="prices-table__header"></th>
+          </tr>
+          <tr class="prices-table__row">
+            <td class="prices-table__data">Диагностика</td>
+            <td class="prices-table__data">Бесплатно</td>
+            <td class="prices-table__data">30 мин</td>
+            <td class="prices-table__data"
+              ><a href="" class="prices-table__link">Заказать</a></td
+            >
+          </tr>
+          <tr class="prices-table__row">
+            <td class="prices-table__data">Замена дисплея</td>
+            <td class="prices-table__data">1000 &#8381;</td>
+            <td class="prices-table__data">30-120 мин</td>
+            <td class="prices-table__data"
+              >><a href="" class="prices-table__link">Заказать</a></td
+            >
+          </tr>
+          <tr class="prices-table__row">
+            <td class="prices-table__data">Замена полифонического динамика</td>
+            <td class="prices-table__data">1000 &#8381;</td>
+            <td class="prices-table__data">30-120 мин</td>
+            <td class="prices-table__data"
+              >><a href="" class="prices-table__link">Заказать</a></td
+            >
+          </tr>
+          <tr class="prices-table__row">
+            <td class="prices-table__data"
+              >Тестирование с выдачей технического заключения</td
+            >
+            <td class="prices-table__data">1000 &#8381;</td>
+            <td class="prices-table__data">30-120 мин</td>
+            <td class="prices-table__data"
+              >><a href="" class="prices-table__link">Заказать</a></td
+            >
+          </tr>
+          <tr class="prices-table__row">
+            <td class="prices-table__data">Замена программного обеспечения</td>
+            <td class="prices-table__data">1000 &#8381;</td>
+            <td class="prices-table__data">30-120 мин</td>
+            <td class="prices-table__data"
+              >><a href="" class="prices-table__link">Заказать</a></td
+            >
+          </tr>
+        </table>
+        <p class="section-prices__paragraph"
+          >Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+          услугу. Для получения коммерческого предложения на постоянное
+          обслуживание, оставьте заявку.</p
+        >
+        <a href="" class="section-prices__link"
+          >Получить коммерческое предложение</a
+        >
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__copyright"
+        >&copy;2019 CPS Разработано командой Apesong
+      </div>
+      <div class="footer__privacy-policy">Политика конфиденциальности </div>
+      <div class="footer__disclaymer"
+        >Информация, размещенная на данной странице, не является публичной
+        офертой
+      </div>
+    </footer>
   </body>
 </html>
